@@ -20,4 +20,9 @@ Project 2: learn to add features to an already created project
   7. Enjoy a refreshing drink, kick back, and enjoy life
   
 ##Details
-Make sure to fork this project and then clone your copy of the repo.  
+Make sure to fork this project and then clone your copy of the repo. We will go over the project in class and add features like you will for your project assignment.  The goal of this project is to get used to using JavaScript and start adding feature to a exsiting project. There will be times in your career that you will be thrown into projects that exist and be required to add features to them.  
+
+##Resources
+  - https://www.firebase.com/docs/web/guide/
+  - http://getbootstrap.com/css/
+  - W3 School and Mozilla Docs
