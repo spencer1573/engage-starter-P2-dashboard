@@ -3,8 +3,9 @@
 var tableElement = document.getElementById('dashboard-list');
 
 var tableList = [
-    {rank: '1', name: 'LoL', type: 'MOBA', cost: 'free',  year: '2010'},
-    {rank: '2', name: 'LoL', type: 'MOBA', cost: 'free',  year: '2010'}
+    {rank: '1', name: 'LoL1', type: 'MOBA1', cost: 'free1',  year: '2011'},
+    {rank: '2', name: 'LoL2', type: 'MOBA2', cost: 'free2',  year: '2012'},
+    {rank: '3', name: 'LoL3', type: 'MOBA3', cost: 'free3',  year: '2013'}
 ];
 
 for (var i=0; i < tableList.length; i++) {
