@@ -1,0 +1,19 @@
+{
+  "name": "project-2",
+  "version": "1.0.0",
+  "description": "Project 2: learn to add features to an already created project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spencer1573/engage-starter-P2-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spencer1573/engage-starter-P2-dashboard/issues"
+  },
+  "homepage": "https://github.com/spencer1573/engage-starter-P2-dashboard#readme"
+}

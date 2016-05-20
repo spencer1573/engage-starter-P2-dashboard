@@ -3,10 +3,10 @@
 var tableElement = document.getElementById('dashboard-list');
 var personsAreaElement = document.getElementById('persons-area');
 
-
 var person = [
-  {name: 'Fire Fly', info: 'I like my ship', img: '.hr-char/kot.png'}
-]
+  {name: 'Fire Fly', info: 'I like my ship', img: './hr-char/kot.png'}
+];
+
 var tableList = [
     {rank: '1', name: 'LoL1', type: 'MOBA1', cost: 'free1',  year: '2011'},
     {rank: '2', name: 'LoL2', type: 'MOBA2', cost: 'free2',  year: '2012'},
@@ -16,7 +16,7 @@ var tableList = [
 dashboard = {};
 
 dashboard.buildTable = function buildTable(value) {
-    if (value) {value = value.toLowerCase()}
+    if (value) {value = value.toLowerCase();}
     tableElement.innerHTML = '';
     for (var i=0; i < tableList.length; i++) {
         var tr = document.createElement('TR');
@@ -24,7 +24,7 @@ dashboard.buildTable = function buildTable(value) {
         for (var key in tableList[i]) {
             if (tableList[i].hasOwnProperty(key)) {
                 var element = tableList[i][key];
-                var td = document.createElement('td')
+                var td = document.createElement('td');
                 if (element.toLowerCase().indexOf(value) > -1) {
                     contentExists = true;
                 }
@@ -36,7 +36,8 @@ dashboard.buildTable = function buildTable(value) {
 
         if (contentExists) {tableElement.appendChild(tr);}
     }
-}
+};
+
 
 
 
@@ -44,7 +45,8 @@ dashboard.buildPersonsArea = function buildPersonsArea(params) {
     var personArea = '';
     
     personsAreaElement.innerHTML = '';
-
+    personsAreaElement.innerHTML = "<img src=\"./hr-char/kot.png\">";
+/*
     for (var i = 0; i < persons.length; i++) {
 
         var element = persons[i];
@@ -53,25 +55,23 @@ dashboard.buildPersonsArea = function buildPersonsArea(params) {
             var person =
                 '<div class="col-xs-6 col-sm-3 placeholder">'+
                    '<img src="' + element.img + '" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">' +
-                   '<h4>' + element.name+'</h4>' +
+                   '<h4>' + element.name + '</h4>' +
                    '<span class="text-muted">' + element.info + '</span>' +
-                '</div>'  
+                '</div>';
 
             personsArea += person;
         }
 
     }
+*/
     personsAreaElement.innerHTML = personArea;
-}
+};
 
 dashboard.search = function search(value) {
-   // if (value.length > 2 ) {
         dashboard.buildTable(value);
+};
 
-  //  }
-}
-
-dashboard.buildPersonsArea('');
+//dashboard.buildPersonsArea('');
 
 dashboard.buildTable('');
 
