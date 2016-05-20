@@ -52,7 +52,7 @@ dashboard.buildPersonsArea = function buildPersonsArea(value, person) {
 
         var element = person[i];
 
-        console.log(element.name.toLowerCase().indexOf(value.toLowerCase()));
+        //console.log(element.name.toLowerCase().indexOf(value.toLowerCase()));
         if (element.name.toLowerCase().indexOf(value.toLowerCase())) {
             personsAreaElement.innerHTML +=
                 '<div class="col-xs-6 col-sm-3 placeholder">'+
