@@ -4,7 +4,8 @@ var tableElement = document.getElementById('dashboard-list');
 var personsAreaElement = document.getElementById('persons-area');
 
 var person = [
-  {name: 'Fire Fly', info: 'I like my ship', img: './hr-char/kot.png'}
+    {name: 'King of Town', info: 'Mrs. Buttersworth!', img: './hr-char/kot.png'},
+    {name: 'Homestar', info: 'Everybody! Everybody!', img: './hr-char/homestar.png'}  
 ];
 
 var tableList = [
@@ -41,37 +42,34 @@ dashboard.buildTable = function buildTable(value) {
 
 
 
-dashboard.buildPersonsArea = function buildPersonsArea(params) {
-    var personArea = '';
-    
+dashboard.buildPersonsArea = function buildPersonsArea(value, person) {
+    var personsArea = '';
+
     personsAreaElement.innerHTML = '';
-    personsAreaElement.innerHTML = "<img src=\"./hr-char/kot.png\">";
-/*
-    for (var i = 0; i < persons.length; i++) {
+    //personsArea = "<img src='./hr-char/kot.png'>";
 
-        var element = persons[i];
+    for (var i = 0; i < person.length; i++) {
 
-        if(element.name.toLowerCase().indexOf(value.toLowerCase())) {
-            var person =
+        var element = person[i];
+
+        console.log(element.name.toLowerCase().indexOf(value.toLowerCase()));
+        if (element.name.toLowerCase().indexOf(value.toLowerCase())) {
+            personsAreaElement.innerHTML +=
                 '<div class="col-xs-6 col-sm-3 placeholder">'+
                    '<img src="' + element.img + '" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">' +
                    '<h4>' + element.name + '</h4>' +
                    '<span class="text-muted">' + element.info + '</span>' +
                 '</div>';
-
-            personsArea += person;
         }
-
     }
-*/
-    personsAreaElement.innerHTML = personArea;
 };
 
 dashboard.search = function search(value) {
-        dashboard.buildTable(value);
+    dashboard.buildTable(value);
+    dashboard.buildPersonsArea(value, person);    
 };
 
-//dashboard.buildPersonsArea('');
+dashboard.buildPersonsArea('', person);
 
 dashboard.buildTable('');
 
