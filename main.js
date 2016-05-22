@@ -1,4 +1,43 @@
 
+var requirejs = require('requirejs');
+var passwordless = require('passwordless');
+var MongoStore = require('passwordless-mongostore');
+var email = require('emailjs');
+
+var smtpServer = email.server.connect({
+    user: 		"app39497726@heroku.com",
+    password: 	"",
+    host:     	"smtp.sendgrid.net",
+    ssl:        true 
+});
+
+smtpServer.send({
+    text:   "I hope this works",
+    from:   "me <no-reply@example.com>",
+	to: 	"someone <spencerkdavies@gmail.com>",
+	subject:"delete"
+	
+}, function(err,message) { console.log(err || message); });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var tableElement = document.getElementById('dashboard-list');
 var personsAreaElement = document.getElementById('persons-area');
