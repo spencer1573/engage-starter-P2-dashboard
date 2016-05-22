@@ -1,0 +1,14 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /Users/sd/.nvm/versions/node/v4.4.4/bin/node /Users/sd/.nvm/versions/node/v4.4.4/bin/firebase serve
+[debug] CLI Version:  3.0.0
+[debug] Platform:     darwin
+[debug] Node Version: v4.4.4
+[debug] Time:         Fri May 20 2016 20:35:16 GMT-0600 (MDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /Users/sd/Dropbox/S_en/engage-starter-P2-dashboard
+[info] Public Directory: public
+[info] 
+[info] Server listening at: http://localhost:5000

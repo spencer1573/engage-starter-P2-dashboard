@@ -1,5 +1,5 @@
 {
-  "name": "project-2",
+  "name": "ep2",
   "version": "1.0.0",
   "description": "Project 2: learn to add features to an already created project",
   "main": "main.js",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/spencer1573/engage-starter-P2-dashboard/issues"
   },
-  "homepage": "https://github.com/spencer1573/engage-starter-P2-dashboard#readme"
+  "homepage": "https://github.com/spencer1573/engage-starter-P2-dashboard#readme",
+  "devDependencies": {
+    "jshint": "^2.9.2"
+  },
+  "dependencies": {
+    "firebase": "^3.0.2"
+  }
 }
