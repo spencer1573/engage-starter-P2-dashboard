@@ -1,10 +1,11 @@
 var passwordless = require('passwordless');
 var MongoStore = require('passwordless-mongostore');
 var email = require('emailjs');
+var the = require('./p.json');
 
 var smtpServer = email.server.connect({
-    user: 		"app39497726@heroku.com",
-    password: 	"A1V40tCmddUEFhkWAp",
+    user: 		the.username,
+    password: 	the.password,
     host:     	"smtp.sendgrid.net",
     ssl:        true 
 });
