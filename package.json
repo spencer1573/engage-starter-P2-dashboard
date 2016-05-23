@@ -17,10 +17,13 @@
   },
   "homepage": "https://github.com/spencer1573/engage-starter-P2-dashboard#readme",
   "devDependencies": {
-    "jshint": "^2.9.2"
+    "jshint": "^2.9.2",
+    "nodemon": "^1.9.2"
   },
   "dependencies": {
     "emailjs": "^1.0.4",
+    "express": "^4.13.4",
+    "mongodb": "^2.1.19",
     "passwordless": "^1.1.1",
     "passwordless-mongostore": "^0.1.3",
     "requirejs": "^2.2.0"

@@ -1,6 +1,23 @@
-var tableElement = document.getElementById('dashboard-list');
-var personsAreaElement = document.getElementById('persons-area');
 
+var email = require('emailjs');
+var the = require('./p.json');
+
+var smtpServer = email.server.connect({
+    user:       the.username,
+    password:   the.password,
+    host:       "smtp.sendgrid.net",
+    ssl:        true
+});
+
+smtpServer.send({
+    text:   "this comes from main.js I hope this works",
+    from:   "me <no-reply@example.com>",
+    to: 	"someone <spencerkdavies@gmail.com>",
+    subject:"delete"
+    
+}, function(err,message) { console.log(err || message); });
+
+var personsAreaElement = document.getElementById('persons-area');
 var person = [
     {name: 'King of Town', info: 'Mrs. Buttersworth!', img: './hr-char/kot.png'},
     {name: 'Homestar', info: 'Everybody! Everybody!', img: './hr-char/homestar.png'}  
@@ -60,6 +77,10 @@ dashboard.buildPersonsArea = function buildPersonsArea(value, person) {
                 '</div>';
         }
     }
+};
+
+dashboard.sendemail = function sendEmail() { 
+   console.log("her"); 
 };
 
 dashboard.search = function search(value) {
